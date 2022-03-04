@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('Tool Version') {
           steps {
-            bat(script: 'mvn -version', returnStatus: true, returnStdout: true)
+            bat 'mvn -version'
           }
         }
 
