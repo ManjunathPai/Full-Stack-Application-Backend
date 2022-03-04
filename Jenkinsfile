@@ -29,7 +29,7 @@ git --version
 
     stage('Post Build') {
       steps {
-        writeFile(file: 'status.txt', text: 'Hey Build is success.!')
+        echo 'Build is success'
       }
     }
 
