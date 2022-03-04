@@ -15,7 +15,8 @@ import com.manju.fullstack.dao.BooksStoreRepository;
 import com.manju.fullstack.exceptions.ResourceNotFoundException;
 import com.manju.fullstack.model.Book;
 
-@CrossOrigin(origins = "http://localhost:3000")
+//To handle cors
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v1")
 public class BooksStoreController {
