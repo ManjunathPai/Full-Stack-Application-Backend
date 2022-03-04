@@ -5,8 +5,7 @@ pipeline {
       parallel {
         stage('Tool Version') {
           steps {
-            sh '''java -version
-'''
+            bat(script: 'java -version', returnStatus: true, returnStdout: true)
           }
         }
 
